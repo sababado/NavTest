@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">NavDemo</string>
+    <string name="title_section3">Section 3</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section1">Section 1</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    
+    <string-array
+        name="sports">
+        <item >NFL</item>
+        <item >CFB</item>
+        <item >NBA</item>
+        <item >CBB</item>
+        <item >NHL</item>
+        <item >MLB</item>
+    </string-array>
+    <string-array
+        name="cfb_divisions">
+        <item >FBS</item>
+        <item >FCS</item>
+        <item >D2</item>
+        <item >D3</item>
+        <item >NAIA</item>
+    </string-array>
+    
+    <string-array
+        name="team_dummies">
+        <item >Raiders</item>
+        <item >Blue Devils</item>
+        <item >Sweet Apple Pies</item>
+        <item >Falcon Punches</item>
+        <item >Blue Barracudas</item>
+        <item >A-Team, Something Special: Feeling Great</item>
+        <item>One Shot Bros</item>
+        <item>Second Hand Lions</item>
+        <item>Division 3 Champions</item>
+        <item>Hypersuits</item>
+        <item>Purple Giants</item>
+        <item>Big Money</item>
+        <item>Old School Kids</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item android:id="@+id/menu_division" android:title="Division" android:showAsAction="ifRoom" android:titleCondensed="Dvsn">
+        <menu>
+            </menu>
+    </item>
+    <item android:id="@+id/menu_simulation" android:titleCondensed="Sim" android:showAsAction="ifRoom" android:title="Simulation"></item><item
+        android:id="@+id/menu_settings"
+        android:orderInCategory="100"
+        android:showAsAction="never"
+        android:title="@string/menu_settings"/>
+    
+    
+
+</menu>
