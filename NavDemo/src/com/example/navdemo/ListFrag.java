@@ -6,6 +6,7 @@ import java.util.List;
 
 import android.app.Activity;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -78,6 +79,11 @@ public class ListFrag extends SearchableSupportListFragment {
 		// Custom Adapter
 		/*
 		 * Comment this and uncomment the line above to use the simple adapter.
+		 */
+		ArrayList<?> list = getSavedListData();
+		Log.v(TAG, "saved list? :"+list);
+		/*
+		 * Saved listdata will be null as of now because the ArrayList of teams is of Strings, not a Parcelable type.
 		 */
 		mAdapter = new ListFragAdapter(this, teamsList);
 		/*
