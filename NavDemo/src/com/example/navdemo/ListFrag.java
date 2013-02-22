@@ -12,11 +12,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
-import android.widget.SimpleAdapter;
 import android.widget.TextView;
 
-import com.sababado.support.v4.app.SearchableSupportListFragment;
 import com.sababado.content.SearchableList;
+import com.sababado.support.v4.app.SearchableSupportListFragment;
 import com.sababado.widget.FilterableBaseAdapter;
 /**
  * This fragment currently looks best in landscape mode, and with translate the same.
@@ -35,7 +34,7 @@ public class ListFrag extends SearchableSupportListFragment {
 	//for use in simple adapter
 	private List<HashMap<String, String>> aList;
 	//for use in custom adapter
-	private List<String> teamsList;
+	private ArrayList<String> teamsList;
 
 	@Override
 	public void onAttach(Activity activity) {
@@ -115,7 +114,7 @@ public class ListFrag extends SearchableSupportListFragment {
 	class ListFragAdapter extends FilterableBaseAdapter {
 
 		public <T> ListFragAdapter(SearchableList searchableListFragment,
-				List<T> listData) {
+				ArrayList<T> listData) {
 			super(searchableListFragment, listData);
 		}
 
@@ -139,7 +138,7 @@ public class ListFrag extends SearchableSupportListFragment {
 		}
 
 		@Override
-		public List<?> performFiltering(List<?> listData, CharSequence constraint) {
+		public ArrayList<?> performFiltering(ArrayList<?> listData, CharSequence constraint) {
 			int listCount = listData.size();
 			Log.v(TAG, "listCount: "+listCount+" / "+constraint);
 			
